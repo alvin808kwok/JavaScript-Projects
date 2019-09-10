@@ -5,16 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="JS/Basic_JavaScript_2.JS"></script>
+    <script src="./JS/Basic_JavaScript_2.JS"></script>
 </head>
 <body>
-
+<!-- BUTTON -->
     <button onclick="mySecondFunction()" id="Yellow_Text">
         Click me!
     </button>
-    <p id="Yellow_Text" onclick="mySecondFunction()">Paragraph Text</p>
 
-    <p onclick="myFunction()" id="concatenate">Concatenate</p>
+    <p id="p1"></p>
+
+    <script>
+    var str = "Highlighted Yellow";
+    var result = str.fontcolor("yellow");
+    document.getElementById("p1").innerHTML = result;</script>
+    
+<!-- CONCATENATE -->
+    <p id="Concatenate"></p> 
+
+    <script>
+    var sentence = "I am learning";
+    sentence += " a lot from this book!";
+    document.getElementById("Concatenate").innerHTML = sentence;
+    </script>
+
+<!-- MATH TEST -->
+    <p id="test"></p>
+
+    <script>
+    function product(p1, p2) {
+    return p1*p2;
+}
+document.getElementById("test").innerHTML = product(12, 15);
+    </script>
+
+<!-- MATH -->
+    <p id="Math"></p>
+
+    <script>
+    var addition = 2 + 2;
+    document.getElementById("Math").innerHTML = "2 + 2 = " + addition;
+    </script>
+    
+<!-- TEST -->
+
+<h2>JavaScript can Change HTML</h2>
+
+<p id="p2">Hello World!</p>
+
+<script>
+document.getElementById("p2").innerHTML = "New text!";
+</script>
+
+<p>The paragraph above was changed by a script.</p>
 
 </body>
 </html>
