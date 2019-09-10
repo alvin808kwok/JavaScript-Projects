@@ -43,5 +43,6 @@ document.write(Y + ", ");
 
 // Random number between 1 and 0
 window.alert(Math.random());
+
 // Random number between 0 and 100
 window.alert(Math.random() * 100);
