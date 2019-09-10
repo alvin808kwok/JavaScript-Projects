@@ -5,15 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script> src="./JS/Basic_JavaScript_3.js" </script>
+    
 </head>
 <body>
-    <p id="Math" onmouseover="addition_Function()" onmouseout="addition_Function()"></p>
-    
-    <script> 
-        var addition = 2 + 2;
-        document.getElementById("Math").innerHTML = "2 + 2 = " + addition;
-    </script>
+    <h1>FLASHCARDS</h1>
 
+    <p id="addition" onclick="addition_Function()">2 + 2 = </p>
+
+    <p id="subtraction" onclick="subtraction_Function()">5 - 2 = </p>
+
+    <p id="multiply" onclick="multiplication()">6 x 8 =</p>
+
+    <p id="division" onclick="division()">48 / 6 =</p>
+
+    <p id="PEMDAS" onclick="more_Math()">(1 + 2) * 10 / 2 - 5 =</p>
+
+    <p id="modulus" onclick="modulus_Operator()">What is the remainer of 25 divided by 6?</p>
+
+    <p id="negative" onclick="negation_Operator()">What is the negative number for 10?</p>
+
+
+
+
+
+
+
+
+
+    <script src="./JS/Basic_JavaScript_3.js"></script>
 </body>
 </html>

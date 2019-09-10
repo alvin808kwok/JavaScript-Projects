@@ -13,51 +13,16 @@
         Click me!
     </button>
 
-    <p id="p1"></p>
+    <p id="Yellow_Text" onmouseover="mySecondFunction()">Hover for Highlight Text!</p>
 
-    <script>
-    var str = "Highlighted Yellow";
-    var result = str.fontcolor("yellow");
-    document.getElementById("p1").innerHTML = result;</script>
     
 <!-- CONCATENATE -->
-    <p id="Concatenate"></p> 
+    <p id="Concatenate" onclick="myFunction()">Click here for full concatenate string.</p> 
 
-    <script>
-    var sentence = "I am learning";
-    sentence += " a lot from this book!";
-    document.getElementById("Concatenate").innerHTML = sentence;
-    </script>
-
-<!-- MATH TEST -->
-    <p id="test"></p>
-
-    <script>
-    function product(p1, p2) {
-    return p1*p2;
-}
-document.getElementById("test").innerHTML = product(12, 15);
-    </script>
 
 <!-- MATH -->
-    <p id="Math"></p>
+    <p id="Math" onmouseout="addition_Function()">Remove mouse away for math addition problem.</p>
 
-    <script>
-    var addition = 2 + 2;
-    document.getElementById("Math").innerHTML = "2 + 2 = " + addition;
-    </script>
-    
-<!-- TEST -->
-
-<h2>JavaScript can Change HTML</h2>
-
-<p id="p2">Hello World!</p>
-
-<script>
-document.getElementById("p2").innerHTML = "New text!";
-</script>
-
-<p>The paragraph above was changed by a script.</p>
 
 </body>
 </html>
