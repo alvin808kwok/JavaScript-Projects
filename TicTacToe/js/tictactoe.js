@@ -90,7 +90,7 @@ function stopEnabled(btn) {
 }
 
 // this function styles the game buttons while they are disabled
-function startEnable(btn) {
+function startEnabled(btn) {
     btn.style.color = "#fff";
     btn.style.border = "2px solid rgb(0, 153, 0)";
     btn.style.backgroundColor = "rgb(57, 230, 0)";
@@ -114,7 +114,7 @@ function stopGame() {
     for (var i = 0; i < arrayO.length; i++) {
         arrayO[i].style.transform = "translateY(-100%)"
     }
-    for (var i = 0; i < arraryX.length; i++) {
+    for (var i = 0; i < arrayX.length; i++) {
         arraryX[i].style.transform = "translateY(100%)";
     }
     // this clears the running log of all game moves
