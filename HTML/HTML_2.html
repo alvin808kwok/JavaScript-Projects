@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../JavaScript/CSS/CSS_1.css">
+</head>
+<body>
+
+    <!-- HTML Forms Example -->
+
+    <!-- <h2>HTML Forms</h2>
+
+    <form>
+        First name: <br>
+        <input type="text" name="firstname" value="Mickey">
+        <br>
+        Last Name:<br>
+        <input type="text" name="lastname" value="Mouse">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <p>If you click the "Submit" button, the form-data will be sent to a page called
+        "/action_page.php"
+    </p> -->
+
+    <!-- END - HTML Forms Example -->
+
+    <!-- CSS Forms -->
+    
+    <h3>Using CSS to style an HTML Form and JavaScript Form Validation</h3>
+
+    <div>
+        <form name="myForm2" action="/action_page.php" onsubmit="return validateForm2()" method="post">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name...">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">United States</option>
+            </select>
+
+           <input type="submit" value="Submit"> 
+        </form>
+    </div>
+
+    <!-- END - CSS Forms -->
+
+    <!-- JavaScript Form Validation -->
+
+    <!-- <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        Name: <input type="text" name="fname">
+    <input type="submit" value="Submit">
+    </form> -->
+
+    <script src="../JavaScript/JavaScript_2.js"></script>
+    <!-- End - JavaScript Form Validation -->
+
+</body>
+</html>
