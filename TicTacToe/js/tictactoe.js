@@ -110,12 +110,12 @@ function stopGame() {
 
     // reset all sqaures to their starting empty state.
     var arrayO = document.getElementsByClassName("O");
-    var arrayX = document.getElementsByClassName("Y");
+    var arrayX = document.getElementsByClassName("X");
     for (var i = 0; i < arrayO.length; i++) {
         arrayO[i].style.transform = "translateY(-100%)"
     }
     for (var i = 0; i < arrayX.length; i++) {
-        arraryX[i].style.transform = "translateY(100%)";
+        arrayX[i].style.transform = "translateY(100%)";
     }
     // this clears the running log of all game moves
     document.getElementById('boardState').innerHTML = "";
@@ -146,7 +146,7 @@ function clearMsg() {
 // this function is for the player configuration panel and checks the
 // proposed avatar assignments and prevents them from being the same.
 function saveSettings() {
-    var p1Index = document.getElementById("player1").selectIndex;
+    var p1Index = document.getElementById("player1").selectedIndex;
     var p1Selected = document.getElementById("player1").options;
     var p2Index = document.getElementById("player2").selectedIndex;
     var p2Selected = document.getElementById("player2").options;
@@ -783,7 +783,7 @@ function square9Animate() {
 
 // this function will perform the animation for the 0 avatar.
 function animateO(selected) {
-    selected.style.transform = (selected.style.transform == "translateY(0%" || null) ? "translateY(0%)" : "translateY(0%)";
+    selected.style.transform = (selected.style.transform == "translateY(0%)" || null) ? "translateY(0%)" : "translateY(0%)";
 }
 
 // this function will perform the animation for the X avatar.
